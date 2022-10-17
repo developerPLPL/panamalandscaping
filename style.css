@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+
+
+    background-image: url("images/001.png");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+
+
+    font-family: sans-serif;
+    color: aliceblue;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+
+
+.header{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1em 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: 1em;
+}
+
+
+.paragraph{
+    padding: 1em;
+    margin: 0;
+}
+
+
+
+
+
+/*cuadro de servicios main*/
+/*container cambiar el width a auto cuando se multiple information*/
+
+
+.container .box h2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.container .box h3{
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-transform: uppercase;
+    }
+
+.container .box p{
+        margin: 0;
+        padding: 0;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        }
+
+.navbar {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+.logo {
+    flex-basis: 15%;
+}
+.logo img{
+    width: 120px;
+    cursor: pointer;
+}
+
+.content{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.content figure img{  width: 315px;}
+.content h1{font-size: 40px; margin: auto;}
+.content h2{width: 80%; margin: auto; font-weight: 100; font-size: 40px; line-height: 35px;}
+
+
+
+
+
+
+
+.container{
+    margin: auto;
+
+    padding: 10px;
+    height: auto;
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.container .box{
+    position: relative;
+    background: linear-gradient(135deg, rgba(180, 156, 156, 0.411), rgba(255, 255, 255, 0.486));
+    backdrop-filter: blur(20px);
+    padding: 20px 40px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* <footer*/
+.footer{
+    background-color: #2b6730;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+.footer .grupo-1 .box figure img{    width: 250px;}
+
+.footer .grupo-1 .box h2{
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box p{
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    background-color: #265b2b;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo-1 .red-social a:hover{
+    color: none;
+}
+
+.footer .grupo-2{
+    background-color: #265b2b;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.footer .grupo-2 small{
+    font-size: 15px;
+}
